@@ -9,7 +9,7 @@ import Projects from './views/Projects';
 
 const milestones = {
   posts: Number(import.meta.env.VITE_GITHUB_MILESTONE_POSTS),
-  snippets: Number(import.meta.env.VITE_GITHUB_MILESTONE_SNIPPETS),
+  reshares: Number(import.meta.env.VITE_GITHUB_MILESTONE_RESHARES),
 };
 
 export default function App() {
@@ -22,8 +22,8 @@ export default function App() {
             <Route path="" element={<Articles milestone={milestones.posts} />} />
             <Route path=":id" element={<Article />} />
           </Route>
-          <Route path="snippets" element={<Outlet />}>
-            <Route path="" element={<Articles milestone={milestones.snippets} />} />
+          <Route path="reshares" element={<Outlet />}>
+            <Route path="" element={<Articles milestone={milestones.reshares} />} />
             <Route path=":id" element={<Article />} />
           </Route>
           <Route path="projects" element={<Projects />} />

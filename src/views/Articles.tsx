@@ -76,7 +76,7 @@ export default function Articles(props: ArticlesProps) {
   }, [props.milestone, query]);
 
   const title = useMemo(() => {
-    return category ? t(`tab.${category.title.toLowerCase()}` as any) : '';
+    return category ? t(`${category.title}` as any) : '';
   }, [category]);
 
   const location = useLocation();

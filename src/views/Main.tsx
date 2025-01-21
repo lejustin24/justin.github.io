@@ -95,11 +95,11 @@ export default function Main() {
                 <IconPosts tw="inline lg:hidden" />
                 <span tw="hidden lg:inline">{t('tab.posts')}</span>
               </NavLinkItem>
-              <NavLinkItem to="/snippets">
+              <NavLinkItem to="/reshares">
                 <IconSnippets tw="inline lg:hidden" />
-                <span tw="hidden lg:inline">{t('tab.snippets')}</span>
+                <span tw="hidden lg:inline">{t('Reposts')}</span>
               </NavLinkItem>
-              <NavLinkItem to="/projects">
+              <NavLinkItem to="/projects" tw="pointer-events-none cursor-not-allowed">
                 <IconProjects tw="inline lg:hidden" />
                 <span tw="hidden lg:inline">{t('tab.projects')}</span>
               </NavLinkItem>
