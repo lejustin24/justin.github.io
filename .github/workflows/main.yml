@@ -39,6 +39,14 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
+        env:
+          VITE_GITHUB_URL: ${{ secrets.VITE_GITHUB_URL }}
+          VITE_GITHUB_ACCESS_TOKEN_PART1: ${{ secrets.VITE_GITHUB_ACCESS_TOKEN_PART1 }}
+          VITE_GITHUB_ACCESS_TOKEN_PART2: ${{ secrets.VITE_GITHUB_ACCESS_TOKEN_PART2 }}
+          VITE_GITHUB_OWNER: ${{ secrets.VITE_GITHUB_OWNER }}
+          VITE_GITHUB_REPO: ${{ secrets.VITE_GITHUB_REPO }}
+          VITE_ARTICLE_PAGE_SIZE: ${{ secrets.VITE_ARTICLE_PAGE_SIZE }}
+          VITE_COMMENT_PAGE_SIZE: ${{ secrets.VITE_COMMENT_PAGE_SIZE }}
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
