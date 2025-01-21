@@ -40,11 +40,16 @@ jobs:
       - name: Build
         run: npm run build
         env:
+          VITE_APP_TITLE: ${{ secrets.VITE_APP_TITLE }}
+          VITE_TITLE: ${{ secrets.VITE_TITLE }}
+          VITE_EMAIL: ${{ secrets.VITE_EMAIL }}
           VITE_GITHUB_URL: ${{ secrets.VITE_GITHUB_URL }}
           VITE_GITHUB_ACCESS_TOKEN_PART1: ${{ secrets.VITE_GITHUB_ACCESS_TOKEN_PART1 }}
           VITE_GITHUB_ACCESS_TOKEN_PART2: ${{ secrets.VITE_GITHUB_ACCESS_TOKEN_PART2 }}
           VITE_GITHUB_OWNER: ${{ secrets.VITE_GITHUB_OWNER }}
           VITE_GITHUB_REPO: ${{ secrets.VITE_GITHUB_REPO }}
+          VITE_GITHUB_MILESTONE_POSTS: ${{ secrets.VITE_GITHUB_MILESTONE_POSTS }}
+          VITE_GITHUB_MILESTONE_RESHARES: ${{ secrets.VITE_GITHUB_MILESTONE_RESHARES }}
           VITE_ARTICLE_PAGE_SIZE: ${{ secrets.VITE_ARTICLE_PAGE_SIZE }}
           VITE_COMMENT_PAGE_SIZE: ${{ secrets.VITE_COMMENT_PAGE_SIZE }}
       - name: Setup Pages
