@@ -1,0 +1,23 @@
+{
+  "tab": {
+    "posts": "Posts",
+    "snippets": "Snippets",
+    "projects": "Projects"
+  },
+  "intro": {
+    "title": "Holà! I'm Justin👋",
+    "subtitle": "Paris | Beirut | Doha 📍",
+    "description": "I'm an AI Engineer & innovator in the Qatar Civil Aviation Authority Air Navigation Department.",
+    "description-low": "I'm passionate about AI, ML/DL, technology & innovation. I'm also a tech enthusiast and a lifelong learner. I love to share my knowledge and experience with the community. I'm always open to new opportunities and collaborations. Feel free to reach out to me. Let's connect and grow together. 🚀",
+    "link": "My Blog"
+  },
+  "dateFormat": "MMM dd, yyyy",
+  "comment": {
+    "title": "Comments",
+    "btn": "Click to Comment",
+    "owner": "Author"
+  },
+  "projects": {
+    "title": "Projects"
+  }
+}
